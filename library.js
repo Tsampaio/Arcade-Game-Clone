@@ -1,11 +1,9 @@
-var Car = function (loc) {
-	var obj = {loc: loc};
-	extend(obj, Car.methods);
-	return obj;
+var Car = function(loc) {
+	this.loc = loc;
 };
 
-Car.mehods = {
-	move : function() {
-		this.loc++;
-	}
+Car.prototype.move = function() {
+	this.loc++;
 };
+
+
